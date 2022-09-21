@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Данил Силантьев](https://up.htmlacademy.ru/htmlcss/35/user/2234911).
-* Наставник: `Неизвестно`.
+* Наставник: Ирина Малиновская(https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
