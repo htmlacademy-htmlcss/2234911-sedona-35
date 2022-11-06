@@ -131,6 +131,7 @@ body {
 .navigation-logo {
   position: relative;
   margin-right: 28px;
+  margin-bottom: -10px;
 }
 
 .navigation-list {
@@ -209,7 +210,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-  margin-top: -10px;
 }
 
 .welcome-container {
@@ -404,7 +404,9 @@ body {
 }
 
 .subscribe-background {
-  background: #756157 url("../images/subscribe-background.jpg") no-repeat;
+  background-color: #756157;
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -439,10 +441,10 @@ body {
   font: inherit;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
   outline: none;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   background: #F2F2F2;
@@ -450,16 +452,17 @@ body {
 }
 
 .subscribe-field:hover {
-  background: #E6E6E6;
+  background-color: #E6E6E6;
 }
 
 .subscribe-field:focus {
-  background: #E6E6E6;
+  background-color: #E6E6E6;
   border-color: #83B3D3;
 }
 
 .subscribe-field:active {
   border-color: #000000;
+  outline: none;
 }
 
 .subscribe-field:disabled,
@@ -584,7 +587,8 @@ body {
 
 .filter-background {
   background-color: #756157;
-  background: url("../images/hotels-filter-background.jpg") no-repeat;
+  background-image: url("../images/hotels-filter-background.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -713,6 +717,7 @@ body {
   position: relative;
   display: flex;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before,
@@ -747,6 +752,7 @@ body {
   left: 0;
   width: 20px;
   height: 20px;
+  box-sizing: border-box;
   background: #ffffff;
   border-radius: 4px;
 }
@@ -755,9 +761,9 @@ body {
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
+.control-input:focus + .control-mark,
+.contacts-input:focus + .c {
   outline: 3px solid #83B3D3;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .control:active {
@@ -1314,7 +1320,7 @@ body {
 }
 
 .field-input-message {
-  display: block;
+  margin: 0;
   margin-top: 4px;
   margin-left: 157px;
   font-size: 16px;
@@ -1360,6 +1366,7 @@ body {
 
 .button-icon {
   fill: rgba(117, 97, 87, 0.3);
+  cursor: pointer;
 }
 
 .minus {
